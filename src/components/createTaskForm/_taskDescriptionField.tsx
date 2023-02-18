@@ -1,6 +1,8 @@
 import React, { FC, ReactElement } from 'react';
 
 import { ITextField } from './interfaces/ITextField';
+import PropTypes from 'prop-types';
+import { TaskTitleField } from './_taskTitleField';
 import { TextField } from '@mui/material';
 
 export const TaskDescriptionField: FC<ITextField> = (
@@ -27,4 +29,9 @@ export const TaskDescriptionField: FC<ITextField> = (
       disabled={disabled}
     />
   );
+};
+
+TaskDescriptionField.propTypes = {
+  onChange: PropTypes.func,
+  disabled: PropTypes.bool,
 };
