@@ -4,7 +4,7 @@ import React, { FC, ReactElement } from 'react';
 import PropTypes from 'prop-types';
 
 interface IProfile {
-  name?: string;
+  name: string;
 }
 
 export const Profile: FC<IProfile> = (
@@ -42,5 +42,5 @@ export const Profile: FC<IProfile> = (
 };
 
 Profile.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
 };
