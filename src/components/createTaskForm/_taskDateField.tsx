@@ -35,4 +35,8 @@ export const TaskDateField: FC<IDateField> = (
   );
 };
 
-TaskDateField.propTypes = {};
+TaskDateField.propTypes = {
+  disabled: PropTypes.bool,
+  onChange: PropTypes.func,
+  value: PropTypes.instanceOf(Date),
+};
