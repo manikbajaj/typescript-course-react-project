@@ -3,7 +3,13 @@ import React, { FC, ReactElement } from 'react';
 
 import PropTypes from 'prop-types';
 
-export const Profile: FC = (props: any): ReactElement => {
+interface IProfile {
+  name?: string;
+}
+
+export const Profile: FC<IProfile> = (
+  props,
+): ReactElement => {
   //  Destructure props
   const { name = 'John' } = props;
   return (
