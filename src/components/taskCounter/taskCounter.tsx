@@ -1,7 +1,13 @@
 import { Avatar, Box, Typography } from '@mui/material';
 import React, { FC, ReactElement } from 'react';
 
-export const TaskCounter: FC = (): ReactElement => {
+import { ITaskCounter } from './interfaces/ITaskCounter';
+
+export const TaskCounter: FC<ITaskCounter> = (
+  props,
+): ReactElement => {
+  //  Destructure props
+  const { status, count = 0 } = props;
   return (
     <>
       <Box
