@@ -8,8 +8,8 @@ export const Sidebar: FC = (): ReactElement => {
   return (
     <Grid
       item
-      md = {4}
-      sx = {{
+      md={4}
+      sx={{
         height: '100vh',
         position: 'fixed',
         right: 0,
@@ -22,7 +22,7 @@ export const Sidebar: FC = (): ReactElement => {
         alignItems: 'center',
       }}
     >
-      <Profile name = 'Manik' />
+      <Profile name="Manik" />
       <CreateTaskForm />
     </Grid>
   );
